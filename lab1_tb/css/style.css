@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "TimesNewRoman";
+    color: white;
+    background-image: url(../img/lightning.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;  
+}
+
+.container{
+    margin: 1%;
+}
+
+h3{
+    text-align:center;
+    padding:5px;
+}
+
+.row-head{
+    padding:1%;
+    background-color: #0b10249e !important;
+    color: white;
+    border-radius: 15px !important;
+}
+
+.row-head h2{
+    margin:auto;
+    text-align:center;
+}
+
+
+.row-main{
+    
+     border-radius: 15px !important;
+     color:white;
+}
+
+.col-sm-3-main{
+    background-color: #0b10249e;
+    border-radius: 15px !important;
+    padding: 5%;
+    text-align:center;
+}
+
+.col-sm-9-main img{
+    padding:6%;
+    width:100%
+}
+
+.col-sm-9-main{
+    background-color: #0b10249e;
+    border-radius: 15px !important;
+    text-align:justify;
+}
+
+.col-sm-9-main p{
+    padding: 7% 3%;
+}
+
+.btn{
+    border: 1px solid rgb(54, 26, 90) !important;
+    background-color: #451e6a9e !important;
+}
+
+.jumbotron {
+    font-family: 'Roboto';
+    color:white;
+    background-color:#04051fc9 !important;
+    padding:15px !important;
+    height: 80px; 
+}
+
+.nav-item a{
+    font-size: 20px;
+    color: white !important;
+}
+
+.navbar {
+    background-color:#0b1024a8  !important;
+}
+
+.navbar-brand{
+    font-size: 26px !important;
+    color:white !important;
+}
