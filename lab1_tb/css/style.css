@@ -9,6 +9,24 @@ body {
     background-size:cover;  
 }
 
+.carousel-caption p{
+  
+    border-radius:15px;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.92);
+    display:inline-block;
+    padding: 3% !important;
+}
+
+p{
+    padding-top: 1% !important;
+}
+
+.carousel img {
+    max-height: 500px;
+    object-fit: contain;
+}
+
 .container{
     margin: 1%;
 }
