@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "TimesNewRoman";
+    font-family: 'Lora', serif;
     color: white;
     background-image: url(../img/lightning.jpg);
     background-repeat: no-repeat;
@@ -19,8 +19,10 @@ body {
 }
 
 p{
-    padding-top: 1% !important;
+    margin-top:1%!important;
+    padding: 1% 5% !important;
 }
+
 
 .carousel img {
     max-height: 500px;
@@ -74,7 +76,7 @@ h3{
 }
 
 .col-sm-9-main p{
-    padding: 7% 3%;
+    margin-top: 5% !important;
 }
 
 .btn{
