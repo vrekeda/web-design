@@ -9,6 +9,15 @@ body {
     background-size:cover;  
 }
 
+.cur-ind a{
+    color:#07f39d !important;
+}
+
+.cur-nav button{
+    border: 1px solid rgb(43, 140, 129) !important;
+    background-color: #35ce92d4 !important;
+}
+
 .carousel-caption p{
   
     border-radius:15px;
