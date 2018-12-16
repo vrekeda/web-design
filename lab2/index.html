@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic table</title>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<h1>Lab2</h1>
+
+</p>
+
+
+<form method="post" action="">
+    <table width="800" border="1" cellspacing="0" cellpadding="5">
+        <tbody id="dynamic">
+    <tr>
+                <td>
+                    <label>
+						<button type="button" class="add_cell">+col</button>
+						<button type="button" class="del_cell">-col</button>
+                    </label>
+                </td>
+                <td>
+                    <label>					   
+						<button type="button" class="add_cell">+col</button>
+						<button type="button" class="del_cell">-col</button>
+                    </label>
+                </td>
+				<td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="text" name="text" placeholder="Введіть значення" value="">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="text" name="text" placeholder="Введіть значення" value="">
+                    </label>
+                </td>
+                <td>
+                    <button type="button" class="add_row">+</button>
+                    <button type="button" class="del_row">-</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<script src="scripts/dynamicTable.js"></script>
+<script>
+    new DynamicTable( document.getElementById("dynamic") );
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/css/styles.css'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Helps with responsive-->
+    <title>Table system</title>
+</head>
+<body><!--When body is loaded launch function initTable() -->
+<script type="text/javascript" src="js/script.js"></script>
+<form action="/table" method="post" id="container">
+    <div class="header">Table</div>
+    <div class="settings-container"><!--call function on click-->
+        <button type="button" class="settings-button" onclick="changeCols()">Change cols amount to</button>
+        <input type="text" name="col-amount" class="amount-field"/><!--Input element, table cell-->
+        <span>(max. 8)</span>
+    </div>
+    <div class="settings-container">
+        <button type="button" class="settings-button" onclick="changeRows()">Change rows amount to</button>
+        <input type="text" name="row-amount" class="amount-field"/>
+        <span>(max. 20)</span>
+    </div>
+    <button type="submit" class="save-button">Save table</button>
+    <% if (table) { %>
+    <div class="table">
+        <% for (let i = 0; i < table.length; i++){ %>
+        <div class="table-row">
+            <%if (i > 0) i--;%>
+            <% for (let j = 0; j < table[table.length-1]; j++, i++) { %>
+			<% if (table[i]!==table[table.length-1]) { %>
+                <input class="table-cell" type="text" name="cell-content" value="<%= table[i] %>"/>
+				<% } else { %>
+				<input class="table-cell0" type="text" name="cell-content" value="<%= table[i] %>"/>
+				<% } %>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+    <% } else { %>
+        <div class="table">
+            <div class="table-row">
+                <input class="table-cell" type="text" name="cell-content"/>
+                <input class="table-cell" type="text" name="cell-content"/>
+                <input class="table-cell" type="text" name="cell-content"/>
+            </div>
+        </div>
+    <% } %>
+</form>
+</body>
+</html>
